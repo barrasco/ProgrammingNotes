@@ -1,8 +1,3 @@
----
-title: "GameplayTags"
-tags: "Programming"
----
-
 # GamePlayTag Tips
 
 `GameplayTagsEditor\Public\SGameplayTagWidget.h`  
@@ -11,4 +6,4 @@ tags: "Programming"
 
 
 
-* Get all actors in editor level:   `UEditorLevelLibrary::GetAllLevelActors()`
+
