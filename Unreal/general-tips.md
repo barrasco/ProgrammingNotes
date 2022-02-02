@@ -1,9 +1,6 @@
----
-title: "General Tips"
-tags: "Programming"
----
+# UE4 General Tips
 
-## UE4 Tips
+## Code snippets
 
 * ### Example to hide world context pin in blueprints
 ```c++
