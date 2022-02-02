@@ -13,6 +13,11 @@ static void AddWidgetToViewport(const UObject* WorldContextObject, class UUserWi
 auto TextAssets = GetTypeWeakObjectPtrs<UTextAsset>(InObjects);
 ```  
 
+* ### Get all actors in editor level  
+```c++
+UEditorLevelLibrary::GetAllLevelActors()
+```
+
 * ### Copy to clipboard
 ```c++
 FPlatformApplicationMisc::ClipboardCopy(*String);
