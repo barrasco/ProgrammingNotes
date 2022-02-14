@@ -64,7 +64,8 @@ For instance, let’s suppose you had a character that has `MaxHealth` as a valu
 
 ### 2. Build States:
   - ### **Empty** : 
-    - This configuration builds a stand-alone executable version of your project, but requires cooked content specific to the platform. 
+    - This configuration builds a stand-alone executable version of your project, but requires cooked content specific to the platform.
+    - Keep in mind that when testing a build in Development only, you should build the project only (and not solution) in your IDE, to make sure you catch all the Errors that will fire while running the RunUAT BuildPlugin command.
   - ### **Editor**:
     - To be able to open a project in Unreal Editor and see all code changes reflected, the project must be built in an Editor configuration.
   - ### **Client**:
