@@ -1,7 +1,5 @@
----
-title: "Unreal Plugins"
-tags: "Tutorial,Programming"
----
+
+# Unreal Plugins
 
 ## Plugin - Create Editor Custom Assets
 1. The asset itself is a simple subtype of UObject
@@ -179,11 +177,6 @@ void UnRegisterAssetTools()
 	}
 }
 ```
-:::note Custom Asset thumbnails
-Thumbnails can be any UI widget, including 3D Viewports
-Search the Engine codebase for uses of `UThumbnailRenderer`, `UDefaultSizedThumbnailRenderer` 
-:::
-
 7. Custom Editor UI for Asset
   - By default, Unreal engine will create a default property inspector for your custom asset, based on your uproperties that are visible/editable.
   - If you want a different UI, you can create your own Slate UI, like this example:
@@ -221,10 +214,6 @@ void SMyButton::Construct(const FArguments& InArgs)
   ];
 }
 ```
-
-:::tip Widget Reflector
-You can use this editor tool to checkout the Slate code for any widget visible on screen, including jumping directly for the code where each slate component was created. (*Window -> Developer Tools -> Widget Reflector*)
-:::
 
 8. Apply your custom UI slate (override additional function in FMyCustomAssetActions_Base):
 ```c++
@@ -266,3 +255,11 @@ void ShutdownModule()
   FGlobalTabmanager::Get()->UnregisterNomadTabSpawner(TabID);
 }
 ```
+
+#### TIP : Custom Asset thumbnails
+> Thumbnails can be any UI widget, including 3D Viewports
+> Search the Engine codebase for uses of `UThumbnailRenderer`, `UDefaultSizedThumbnailRenderer` 
+
+
+#### TIP Widget Reflector
+> You can use this editor tool to checkout the Slate code for any widget visible on screen, including jumping directly for the code where each slate component was created.(*Window -> Developer Tools -> Widget Reflector*)
