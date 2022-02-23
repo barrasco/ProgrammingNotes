@@ -261,5 +261,25 @@ void ShutdownModule()
 > Search the Engine codebase for uses of `UThumbnailRenderer`, `UDefaultSizedThumbnailRenderer` 
 
 
-#### TIP Widget Reflector
+#### TIP : Widget Reflector
 > You can use this editor tool to checkout the Slate code for any widget visible on screen, including jumping directly for the code where each slate component was created.(*Window -> Developer Tools -> Widget Reflector*)
+
+#### TIP : Unreal Message Box System (Message Dialog Pop-up)
+> Unreal uses custom popup message boxes that can be called using:
+> ```c++
+> FMessageDialog::Open(EAppMsgType::Ok, EAppReturnType::Type::Ok, FText::FromString(*OutErrorMessage));
+> ```
+
+#### TIP : Unreal Notification Message System (Bottom-Right notification messages)
+> Unreal uses custom Notification messages using:
+> ```c++
+> NotificationItem = FSlateNotificationManager::Get().AddNotification(Info);
+> if (auto NotificationPtr = NotificationItem.Pin())
+> {
+>	NotificationPtr->SetFadeOutDuration(0.5f);
+>	NotificationPtr->SetExpireDuration(40.0f);
+>	NotificationPtr->SetCompletionState(SNotificationItem::CS_Pending);
+>	NotificationPtr->SetHyperlink(FSimpleDelegate::CreateLambda([]() { FGlobalTabmanager::Get()->TryInvokeTab(FName("OutputLog")); }),
+>	FText::FromString("Show Output Log"));
+> }
+> ```
