@@ -23,6 +23,17 @@ UEditorLevelLibrary::GetAllLevelActors()
 FPlatformApplicationMisc::ClipboardCopy(*String);
 ```
 
+* ### Quickly Read / Write ini settings on save folder
+```c++
+// Write (string for example, there are other functions for other var types)
+GConfig->SetString(TEXT("SectionNameExample"), TEXT("VariableName"), TEXT("MyValue"), GEngineIni);
+
+// Read the values
+FString MyValue;
+GConfig->GetString(TEXT("SectionNameExample"), TEXT("VariableName"), MyValue, GEngineIni);
+
+```
+
 * ### Get all properties from Struct / Class
 ```c++
 // Get properties
