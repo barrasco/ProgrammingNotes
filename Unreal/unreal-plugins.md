@@ -264,7 +264,7 @@ void ShutdownModule()
 #### TIP : Widget Reflector
 > You can use this editor tool to checkout the Slate code for any widget visible on screen, including jumping directly for the code where each slate component was created.(*Window -> Developer Tools -> Widget Reflector*)
 
-#### TIP : Unreal Message Box System (Message Dialog Pop-up)
+#### TIP : Unreal Message Box System (Message Dialog Pop-up, MessageBox)
 > Unreal uses custom popup message boxes that can be called using:
 > ```c++
 > FMessageDialog::Open(EAppMsgType::Ok, EAppReturnType::Type::Ok, FText::FromString(*OutErrorMessage));
