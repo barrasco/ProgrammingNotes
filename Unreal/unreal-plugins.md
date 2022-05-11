@@ -1,5 +1,5 @@
 
-# Unreal Plugins
+# Unreal Editor / Plugins
 
 ## Plugin - Create Editor Custom Assets
 1. The asset itself is a simple subtype of UObject
@@ -269,6 +269,8 @@ void ShutdownModule()
 > ```c++
 > FMessageDialog::Open(EAppMsgType::Ok, EAppReturnType::Type::Ok, FText::FromString(*OutErrorMessage));
 > ```
+> If we want a more custom modal windows solutions. There are a number of options check :
+> https://docs.unrealengine.com/5.0/en-US/API/Editor/UnrealEd/Dialogs/
 
 #### TIP : Unreal Notification Message System (Bottom-Right notification messages)
 > Unreal uses custom Notification messages using:
