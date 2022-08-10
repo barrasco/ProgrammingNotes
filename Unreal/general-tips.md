@@ -148,4 +148,3 @@ For instance, let’s suppose you had a character that has `MaxHealth` as a valu
 * [Slate Examples](https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/Slate/Widgets/)
 * [Good UPROPERTY specifiers list](https://benui.ca/unreal/uproperty/)
 * [UE4 Delegates, Async, Subsystems](https://drive.google.com/file/d/1ovIX17WXnjHdfdtP9JCJ92mPZXAkrgaz/view?usp=sharing)
-* 
