@@ -140,6 +140,18 @@ For instance, let’s suppose you had a character that has `MaxHealth` as a valu
   
 ***
 
+## Unreal custon engine build (github)
+
+1. Get git clone from [Github](https://github.com/EpicGames/UnrealEngine). try using --depth 1 to avoid downloading too many history data.
+2. Run `.\Setup.bat`
+3. Run `\Engine\Binaries\DotNET\GitDependencies.exe --force` (4.27) or `\Engine\Binaries\DotNET\GitDependencies\win-x64\GitDependencies.exe --force` (5.x)
+4. Run `.\GenerateProjectFiles.bat`
+5. Run `.\Engine\\Build\BatchFiles\RunUAT.bat BuildGraph -target="Make Installed Build Win64" -script="Engine/Build/InstalledEngineBuild.xml" -set:HostPlatformOnly=true -clean -set:VS2019=true`. -set:VS2019=true is required just for 4.27.
+
+Notes:
+1. Make sure you clone this to a root folder 'c:\', so we dont have paths too long.
+2. Normally use tag oficial releases branches, its safer.
+
 ## Useful links
 
 * [UE4 Coding Standard](https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/DevelopmentSetup/CodingStandard/)
