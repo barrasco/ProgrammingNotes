@@ -142,6 +142,22 @@ For instance, let’s suppose you had a character that has `MaxHealth` as a valu
 
 ## Unreal custon engine build (github) by powershell
 
+#### Pre-requirements (for instance using [chocolatey](https://chocolatey.org/))
+These may change with new unreal versions
+
+* choco install -y python --version=xxx
+* choco install -y windows-sdk-10-version-2004-windbg visualstudio2019buildtools visualstudio2019community
+* choco install jdk8 -y
+* choco install git -y
+* choco install -y visualstudio2019-workload-vctools netfx-4.8-devpack
+* choco install -y netfx-4.6.2what -devpack
+* choco install -y --includeOptional visualstudio2019-workload-nativegame
+* choco install -y visualstudio2019-workload-manageddesktop
+* choco install -y p4
+* choco install -y directx --checksum 053f76dcbb28802e23341b6a787e3b0791c0fa5c8d4d011b1044172dbf89c73b
+
+#### Setup unreal from github repo
+
 1. Get git clone from [Github](https://github.com/EpicGames/UnrealEngine). try using --depth 1 to avoid downloading too many history data.
 2. Run `.\Setup.bat`
 3. Run `\Engine\Binaries\DotNET\GitDependencies.exe --force` (4.27) or `\Engine\Binaries\DotNET\GitDependencies\win-x64\GitDependencies.exe --force` (5.x)
