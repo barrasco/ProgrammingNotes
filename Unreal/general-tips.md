@@ -156,6 +156,12 @@ For instance, let’s suppose you had a character that has `MaxHealth` as a valu
 * choco install -y p4
 * choco install -y directx --checksum 053f76dcbb28802e23341b6a787e3b0791c0fa5c8d4d011b1044172dbf89c73b
 
+Alternatively, if you are using the normal vs2019 dependencies from an installed engine from epic store:
+* make sure you have installed .Net 4.6.2
+* you may need to install [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
+* and activate the component "Debugging tools for windows"
+* reference : [ERROR: Unable to find installation of PDBCOPY.EXE](https://ashley-tharp.medium.com/error-unable-to-find-installation-of-pdbcopy-exe-when-compiling-with-vs2019-c-on-windows-2c5e33692345) 
+
 #### Setup unreal from github repo
 
 1. Get git clone from [Github](https://github.com/EpicGames/UnrealEngine). try using --depth 1 to avoid downloading too many history data.
