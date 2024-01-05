@@ -189,3 +189,4 @@ Notes:
 * [Slate Examples](https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/Slate/Widgets/)
 * [Good UPROPERTY specifiers list](https://benui.ca/unreal/uproperty/)
 * [UE4 Delegates, Async, Subsystems](https://drive.google.com/file/d/1ovIX17WXnjHdfdtP9JCJ92mPZXAkrgaz/view?usp=sharing)
+* [Unreal multiplayer compendium](https://cedric-neukirchen.net/docs/multiplayer-compendium/introduction)
